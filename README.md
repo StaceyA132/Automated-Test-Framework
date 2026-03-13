@@ -12,7 +12,7 @@ You should see each test stream to stdout and a log file created under `logs/`. 
 
 ## Project layout
 
-- `src/hwtest/hardware.py` – simple component simulators (regulator, sensor, signal module).
+- `src/hwtest/hardware.py` – simple component simulators (regulator, sensor, signal module, current sensor).
 - `src/hwtest/models.py` – data classes for limits, measurements, and test results.
 - `src/hwtest/tests/` – modular test cases (voltage output, sensor drift, signal integrity).
 - `src/hwtest/runner.py` – orchestrates test sequences, logging, and summary.
@@ -34,7 +34,9 @@ You should see each test stream to stdout and a log file created under `logs/`. 
 ### Sample Test Run
 
 ```text
-2026-03-12 21:10:18 [INFO] Running Voltage Regulator Output -> FAIL
-2026-03-12 21:10:18 [INFO] Running Temperature Sensor Drift -> PASS
-2026-03-12 21:10:18 [INFO] Running Signal Integrity -> PASS
-Summary: 3 total, 2 passed, 1 failed
+2026-03-12 21:17:06 [INFO] Running Voltage Regulator Output -> FAIL
+2026-03-12 21:17:06 [INFO] Running Temperature Sensor Drift -> PASS
+2026-03-12 21:17:06 [INFO] Running Signal Integrity -> PASS
+2026-03-12 21:17:06 [INFO] Running Current Sensor Accuracy -> PASS
+Summary: 4 total, 3 passed, 1 failed
+```

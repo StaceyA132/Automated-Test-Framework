@@ -6,8 +6,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Iterable, List
 
-from hwtest.hardware import SignalModule, TemperatureSensor, VoltageRegulator
+from hwtest.hardware import CurrentSensor, SignalModule, TemperatureSensor, VoltageRegulator
 from hwtest.models import TestResult
+from hwtest.tests.test_current_sensor import CurrentSensorTest
 from hwtest.tests.test_signal_module import SignalIntegrityTest
 from hwtest.tests.test_temperature_sensor import TemperatureSensorDriftTest
 from hwtest.tests.test_voltage_regulator import VoltageRegulatorTest
@@ -32,11 +33,13 @@ def default_suite() -> List:
     regulator = VoltageRegulator()
     sensor = TemperatureSensor()
     signal = SignalModule()
+    current = CurrentSensor()
 
     return [
         VoltageRegulatorTest(regulator),
         TemperatureSensorDriftTest(sensor),
         SignalIntegrityTest(signal),
+        CurrentSensorTest(current),
     ]
 
 
@@ -79,4 +82,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

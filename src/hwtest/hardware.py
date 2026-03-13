@@ -51,3 +51,13 @@ def simulate_environment() -> Tuple[float, float]:
     runtime = random.uniform(0, 8)
     return ambient, runtime
 
+
+@dataclass
+class CurrentSensor:
+    nominal_ma: float = 250.0
+    noise_ma: float = 5.0
+    drift_ma: float = 10.0
+
+    def read(self) -> float:
+        """Simulate current measurement in milliamps."""
+        return self.nominal_ma + self.drift_ma + random.gauss(0, self.noise_ma)
