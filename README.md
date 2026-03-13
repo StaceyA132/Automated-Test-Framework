@@ -40,3 +40,7 @@ You should see each test stream to stdout and a log file created under `logs/`. 
 2026-03-12 21:17:06 [INFO] Running Current Sensor Accuracy -> PASS
 Summary: 4 total, 3 passed, 1 failed
 ```
+
+### Sample Log Artifact
+
+- See `examples/sample_run.txt` for a captured log from a seeded run.

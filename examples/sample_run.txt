@@ -1,0 +1,15 @@
+2026-03-12 21:10:18,759 [INFO] root: Logging initialized at logs/test_run_20260313_011018.log
+2026-03-12 21:10:18,759 [INFO] root: Running Voltage Regulator Output
+2026-03-12 21:10:18,759 [DEBUG] hwtest.tests.test_voltage_regulator: Voltage test at ambient=22.0C runtime=6.8h
+2026-03-12 21:10:18,759 [DEBUG] hwtest.tests.base: Completed Voltage Regulator Output with status FAIL
+2026-03-12 21:10:18,759 [INFO] root: Voltage Regulator Output -> FAIL
+2026-03-12 21:10:18,759 [INFO] root: Running Temperature Sensor Drift
+2026-03-12 21:10:18,759 [DEBUG] hwtest.tests.base: Completed Temperature Sensor Drift with status PASS
+2026-03-12 21:10:18,759 [INFO] root: Temperature Sensor Drift -> PASS
+2026-03-12 21:10:18,759 [INFO] root: Running Signal Integrity
+2026-03-12 21:10:18,759 [DEBUG] hwtest.tests.base: Completed Signal Integrity with status PASS
+2026-03-12 21:10:18,759 [INFO] root: Signal Integrity -> PASS
+2026-03-12 21:10:18,759 [INFO] root: Summary: 3 total, 2 passed, 1 failed
+2026-03-12 21:10:18,759 [INFO] root: Voltage Regulator Output [FAIL]
+2026-03-12 21:10:18,759 [INFO] root: Temperature Sensor Drift [PASS]
+2026-03-12 21:10:18,760 [INFO] root: Signal Integrity [PASS]
