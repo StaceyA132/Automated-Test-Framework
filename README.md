@@ -30,7 +30,3 @@ You should see each test stream to stdout and a log file created under `logs/`. 
 - Add new simulated hardware in `hardware.py`.
 - Create a new test module in `src/hwtest/tests/` and subclass `HardwareTest`.
 - Register your test in `default_suite()` inside `runner.py`.
-
-## Requirements
-
-Python 3.11+; uses only the standard library.
