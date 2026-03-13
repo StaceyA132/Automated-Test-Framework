@@ -30,3 +30,11 @@ You should see each test stream to stdout and a log file created under `logs/`. 
 - Add new simulated hardware in `hardware.py`.
 - Create a new test module in `src/hwtest/tests/` and subclass `HardwareTest`.
 - Register your test in `default_suite()` inside `runner.py`.
+
+### Sample Test Run
+
+```text
+2026-03-12 21:10:18 [INFO] Running Voltage Regulator Output -> FAIL
+2026-03-12 21:10:18 [INFO] Running Temperature Sensor Drift -> PASS
+2026-03-12 21:10:18 [INFO] Running Signal Integrity -> PASS
+Summary: 3 total, 2 passed, 1 failed
